@@ -39,35 +39,36 @@
 
         <nav class="navbar navbar-expand-lg navbar-inverse bg-transparent bg-primary fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" alt=""></a>
+                <a class="navbar-brand" href="<%= root_path %>" data-method="get" ><img src="images/sayna_logo.jpg" alt=""></a>
 
                 <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Sayna</span>
                 </button><!-- / navbar-toggler -->
 
                 <div class="collapse navbar-collapse" id="navbar-toggle">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">HOME</a>
+                        <li class="nav-item after-dropdown">
+                            <a class="nav-link" href="<%= root_path %>" data-method="get">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item after-dropdown">
+                            <a class="nav-link" href="#" data-method="get">A PROPOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="features.html">FEATURES</a>
+                            <a class="nav-link" href="#" data-method="get">BLOG</a>
                         </li>
                         <li class="nav-item last">
-                            <a class="nav-link active" href="contact.html">CONTACT</a>
+                            <a class="nav-link" href="<%= contact_path %>"  data-method="get">CONTACTER</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="/" data-method="get" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONNECTION</a>
+                            <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
+                                <a class="dropdown-item active" href="#" data-method="get">Etudiant</a>
+                                <a class="dropdown-item" href="#" dta-method="get">Entreprise</a>
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
                     </ul><!-- / navbar-nav -->
                 </div><!-- / navbar-collapse -->
             </div><!-- / container -->

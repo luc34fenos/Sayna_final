@@ -11,7 +11,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png">
     <!-- Site Title -->
-    <title>Uniq - Portfolio Template</title>
+    <title>Sayna-Mada</title>
     <!-- Bootstrap 4 core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Styles -->
@@ -39,66 +39,38 @@
 
     <div id="main-content">
 
-        <nav class="navbar navbar-expand-lg navbar-inverse bg-transparent bg-primary fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: url('images/bg-img-small.jpg');">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="images/logo-white.png" alt=""></a>
+                <a class="navbar-brand" href="<%= root_path %>" data-method="get" ><img src="images/sayna_logo.jpg" style="border-radius: 50%" alt=""></a>
 
                 <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
                     <span class="icon-bar bottom-bar"></span>
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">Sayna</span>
                 </button><!-- / navbar-toggler -->
 
                 <div class="collapse navbar-collapse" id="navbar-toggle">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="/" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HOME</a>
-                            <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
-                                <a class="dropdown-item active" href="index.html">MAIN DEMO</a>
-                                <a class="dropdown-item" href="index2.html">PORTFOLIO</a>
-                                <a class="dropdown-item" href="index3.html">AGENCY</a>
-                                <a class="dropdown-item" href="index4.html">ONE PAGE</a>
-                                <a class="dropdown-item" href="index5.html">BOXED</a>
-                            </div><!-- / dropdown-menu -->
-                        </li><!-- / dropdown -->
                         <li class="nav-item after-dropdown">
-                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <a class="nav-link" href="<%= root_path %>" data-method="get">ACCUEIL</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#x" id="dropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                            <div class="dropdown-menu mega-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown2">
-                                <div class="row">
-                                    <div class="col-lg-6 sub-menu">
-                                        <h6 class="dropdown-item text-light-grey mb-0">COLUMNS</h6>
-                                        <a class="dropdown-item" href="portfolio-2col.html">2 COLUMNS</a>
-                                        <a class="dropdown-item" href="portfolio.html">3 COLUMNS</a>
-                                        <a class="dropdown-item" href="portfolio-4col.html">4 COLUMNS</a>
-                                        <a class="dropdown-item" href="portfolio-2col-masonry.html">2COL MASONRY</a>
-                                        <a class="dropdown-item" href="portfolio-masonry.html">3COL MASONRY</a>
-                                        <a class="dropdown-item" href="portfolio-4col-masonry.html">4COL MASONRY</a>
-                                    </div><!-- / sub-menu -->
-                                    <div class="col-lg-6 sub-menu">
-                                        <h6 class="dropdown-item text-light-grey mb-0">STYLES</h6>
-                                        <a class="dropdown-item" href="portfolio-effect-show.html">SHOW EFFECT</a>
-                                        <a class="dropdown-item" href="portfolio-effect-lines.html">LINE EFFECT</a>
-                                        <a class="dropdown-item" href="portfolio-effect-info.html">INFO EFFECT</a>
-                                        <a class="dropdown-item" href="portfolio-project-box.html">INFO BOX</a>
-                                        <a class="dropdown-item" href="portfolio-no-gutter.html">NO GUTTER</a>
-                                        <a class="dropdown-item" href="portfolio-fullwidth.html">FULL WIDTH</a>
-                                    </div><!-- / sub-menu -->
-                                </div><!-- / row -->
-                            </div><!-- / dropdown-menu -->
-                        </li><!-- / dropdown -->
                         <li class="nav-item after-dropdown">
-                            <a class="nav-link" href="blog.html">BLOG</a>
+                            <a class="nav-link" href="#" data-method="get">A PROPOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="features.html">FEATURES</a>
+                            <a class="nav-link" href="#" data-method="get">BLOG</a>
                         </li>
                         <li class="nav-item last">
-                            <a class="nav-link" href="<%=contact_path %>">CONTACT</a>
+                            <a class="nav-link" href="<%= contact_path %>"  data-method="get">CONTACTER</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="/" data-method="get" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONNECTION</a>
+                            <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
+                                <a class="dropdown-item active" href="#" data-method="get">Etudiant</a>
+                                <a class="dropdown-item" href="#" dta-method="get">Entreprise</a>
+                            </div><!-- / dropdown-menu -->
+                        </li><!-- / dropdown -->
                     </ul><!-- / navbar-nav -->
                 </div><!-- / navbar-collapse -->
             </div><!-- / container -->
@@ -110,13 +82,13 @@
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="spacer-2x">&nbsp;</div>
-                            <p class="text-white">Modern Design</p>
-                            <h2 class="text-white">UNIQ - PORTFOLIO TEMPLATE</h2>
+                            <p class="text-white">Madagascar</p>
+                            <h2 class="text-white">SAYNA</h2>
                             <div class="spacer">&nbsp;</div>
-                            <p class="text-white">Quisque venenatis semper tempus. Nunc facilisis, sapien quis euism ultrices, urna ligula ullamcorper mi, non viverra magna leo et magna. Fusce elementum mauris non luctus faucibus.</p>
+                            <p class="text-white">Ascensseur digital des jeunes talents malagasy. <br> UPDATE YOUR BRAIN, HACK YOUR FUTUR</p>
                             <div class="spacer">&nbsp;</div>
-                            <a href="#about" class="btn btn-info smooth-scroll mt-1">Learn More</a>
-                            <a href="#portfolio" class="btn btn-info smooth-scroll mt-1">Our Works</a>
+                            <a href="#about" class="btn btn-info smooth-scroll mt-1">Connection</a>
+                            <a href="#" data-method="get" class="btn btn-info smooth-scroll mt-1">Inscription</a>
                         </div><!-- / column -->
                         <div class="col-lg-6">
                             <div class="spacer-2x">&nbsp;</div>
@@ -417,7 +389,7 @@
                     <!-- fact -->
                     <div class="col-md-6 col-lg-3 text-center fact-item">
                         <i class="fact-icon fas fa-briefcase mb-3 text-primary"></i>
-                        <h3 class="timer" id="projects" data-to="2437" data-speed="3000">2437</h3>
+                        <h3 class="timer" id="projects" data-to="2437" data-speed="3000">10</h3>
                         <h5 class="fact-title">PROJECTS</h5>
                     </div>
                     <!-- / fact -->
@@ -425,7 +397,7 @@
                     <!-- fact -->
                     <div class="col-md-6 col-lg-3 text-center fact-item">
                         <i class="fact-icon fas fa-lightbulb mb-3 text-primary"></i>
-                        <h3 class="timer" id="star" data-to="369" data-speed="4000">369</h3>
+                        <h3 class="timer" id="star" data-to="369" data-speed="4000">120</h3>
                         <h5 class="fact-title">IDEAS</h5>
                     </div>
                     <!-- / fact -->
@@ -433,7 +405,7 @@
                     <!-- fact -->
                     <div class="col-md-6 col-lg-3 text-center fact-item">
                         <i class="fact-icon fas fa-user mb-3 text-primary"></i>
-                        <h3 class="timer" id="client" data-to="691" data-speed="5000">691</h3>
+                        <h3 class="timer" id="client" data-to="691" data-speed="5000">312</h3>
                         <h5 class="fact-title">CLIENTS</h5>
                     </div>
                     <!-- / fact -->
@@ -460,7 +432,7 @@
                         <div class="spacer">&nbsp;</div>
                         <p class="mb-3">Fusce laoreet magna et risus aliquam egestas. Fusce a nunc vulputate, facilisis purus quis, dignissim erat. Integer a felis eu nulla suscipit condimentum id vel metus. Ut eget dictum nisl. Nunc lorem enim, volutpat quis diam eu, luctus tristique lorem. Praesent rhoncus ultrices rhoncus. Sed ut ante tincidunt, ultrices purus at, vestibulum orci. Sed ac arcu metus. Praesent lobortis est nec mi.</p>
                         <p>Donec ac augue a dolor porttitor elementum molestie blandit massa. Aliquam eget mollis orci, eu vestibulum nunc. Integer venenatis malesuada posuere. Nunc efficitur nisi ut tincidunt dapibus.</p>
-                        <a href="about.html" class="mt-3 btn btn-info">More Info</a>
+                        <a href="#" class="mt-3 btn btn-info">More Info</a>
                     </div><!-- / column -->
                     <div class="col-md-6 feature-left">
                         <div class="feature block wimage">
@@ -615,62 +587,20 @@
         <div class="reveal-content">
             <div class="footer-widgets bg-inverse dark">
                 <div class="container">
-                    <div class="row">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-lg-3 widget">
-                            <img src="images/logo-white.png" alt="logo" class="footer-logo">
-                            <p>Donec quis metus ex. Proin pellentesque velit euismod nisl volutpat, id viverra metus mollis. Fusce at suscipit arcu. Nunc tellus nibh, ullamcorper nulla gravida euismod quis metus.</p>
-                            <a href="about.html" class="btn-link mt-2"><b>Read More</b></a>
-                        </div><!-- / column-->
-
-                        <div class="col-lg-3 widget">
-                            <h3 class="widget-title">USEFUL LINKS</h3>
-                            <ul class="footer-list">
-                                <li class="mb-3"><a href="#x">Privacy Policy</a></li>
-                                <li class="mb-3"><a href="#x">Terms &amp; Conditions</a></li>
-                                <li class="mb-3"><a href="#x">News &amp; Updates</a></li>
-                                <li class="mb-3"><a href="#x">Support Center</a></li>
-                            </ul>
-                        </div><!-- / column-->
-
-                        <div class="col-lg-3 widget">
-                            <h3 class="widget-title">RECENT PROJECTS</h3>
-                            <div class="project-widget">
-                                <ul class="list-unstyled footer-list">
-                                    <li>
-                                        <div class="recent-posts first">
-                                            <div class="recent-post-image">
-                                                <img src="images/project1.jpg" alt="">
-                                            </div><!-- / recent-post-image -->
-                                            <div class="recent-post-content">
-                                                <a href="single-project.html" class="recent-post-title">PLASTIC POUCH</a>
-                                                <p class="text-sm mb-2">Illustrations</p>
-                                                <p class="text-sm opc-75"><i class="far fa-clock"></i> 23 AUG 2018</p>
-                                            </div><!-- / recent-post-content -->
-                                        </div><!-- / recent-posts -->
-                                    </li>
-                                    <li>
-                                        <div class="recent-posts pt-2">
-                                            <div class="recent-post-image">
-                                                <img src="images/project2.jpg" alt="">
-                                            </div><!-- / recent-post-image -->
-                                            <div class="recent-post-content">
-                                                <a href="single-project.html" class="recent-post-title">BIZ CARDS</a>
-                                                <p class="text-sm mb-2">Branding, Design</p>
-                                                <p class="text-sm opc-75"><i class="far fa-clock"></i> 21 AUG 2018</p>
-                                            </div><!-- / recent-post-content -->
-                                        </div><!-- / recent-posts -->
-                                    </li>
-                                </ul>
-                            </div><!-- / project-widget -->
+                            <img src="images/sayna_logo.jpg" style="border-radius: 50%" alt="logo" class="footer-logo">
+                            <p>Ascensseur digital des jeunes a madagascar</p>
+                            <a href="#" class="btn-link mt-2"><b>A propos</b></a>
                         </div><!-- / column-->
 
                         <div class="col-lg-3 widget">
                             <h3 class="widget-title">CONTACT US</h3>
                             <ul class="footer-list">
-                                <li class="mb-3"><a href="tel:01234567890"><i class="fas fa-phone mr-2"></i> 0123 456 7890</a></li>
-                                <li class="mb-3"><a href="mailto:info@youriste.com"><i class="fas fa-envelope mr-2"></i> info@yoursite.com</a></li>
-                                <li class="mb-3"><a href="#x"><i class="fab fa-twitter mr-2"></i> @UniqTwitter</a></li>
-                                <li class="mb-3"><i class="fas fa-map-marked-alt mr-2"></i> 27 King Street, Miami</li>
+                                <li class="mb-3"><a href="tel:01234567890"><i class="fas fa-phone mr-2"></i> 034 34 567 89</a></li>
+                                <li class="mb-3"><a href="mailto:info@youriste.com"><i class="fas fa-envelope mr-2"></i> sayna.io</a></li>
+                                <li class="mb-3"><a href="#x"><i class="fab fa-twitter mr-2"></i> sayna.staff@gmail.com.io </a></li>
+                                <li class="mb-3"><i class="fas fa-map-marked-alt mr-2"></i> faravohitra Tananarive</li>
                             </ul>
                         </div><!-- / column-->
                     </div><!-- / row -->
@@ -681,12 +611,12 @@
                 <div class="container text-center">
                     <div class="row">
                         <div class="col-lg-8 footer-left-area">
-                            <p>© 2018 Uniq by <a href="https://kingstudio.ro" target="_blank">KingStudio</a></p>
+                            <p>© 2018 Sayna</p>
                         </div>
                         <div class="col-lg-4 social-icons footer-right-area">
-                            <a href="#x" class="btn-social text-whit"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#x" class="btn-social"><i class="fab fa-twitter"></i></a>
-                            <a href="#x" class="btn-social"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/HelloSayna/" class="btn-social text-whit"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/razafimahefam?lang=en" class="btn-social"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/matina_razafimahefa/?hl=en" class="btn-social"><i class="fab fa-instagram"></i></a>
                         </div><!-- / social-icons -->
                     </div><!-- / row -->
                 </div><!-- / container -->

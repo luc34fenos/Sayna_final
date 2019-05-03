@@ -2931,7 +2931,8 @@ label.btn-file {
 
 .fixed-top.nav-scroll {
   padding: 0.75rem 1.25rem;
-  background-color: rgba(255, 255, 255, 0.97) !important;
+  opacity: 0.4;
+  background-color: rgba(255, 255, 255, 0.4) !important;
 }
 
 .fixed-top.navbar-inverse.nav-scroll {
@@ -4274,12 +4275,12 @@ html.has-boxed-container, body.has-boxed-container {
 }
 
 .parallax-section.small {
-  background-image: url("../images/bg-img-small.jpg");
+  background-image: url("../images/bg-img.jpg");
   padding: 70px 0;
 }
 
 #news.parallax-section {
-  background-image: url("../images/news-bg.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 section {
@@ -4310,23 +4311,23 @@ header {
 }
 
 header.main-demo {
-  background-image: url("../images/main-header.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 header.portfolio-demo {
-  background-image: url("../images/portfolio-header.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 header.agency-page {
-  background-image: url("../images/agency-page-header.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 header.boxed-page {
-  background-image: url("../images/boxed-header.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 header.boxed-single-page {
-  background-image: url("../images/boxed-page-header.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 .header-slider {
@@ -5009,7 +5010,7 @@ ul.portfolio.info-effect {
 }
 
 .info-bg {
-  background-image: url("../images/info-bg.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 .feature.block {
@@ -5145,11 +5146,11 @@ ul.portfolio.info-effect {
 }
 
 .contact-bg {
-  background-image: url("../images/contact-bg.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 .contact-bg-color {
-  background-image: url("../images/contact-bg-color.jpg");
+  background-image: url("../images/bg-img.jpg");
 }
 
 #contact .box-description {
