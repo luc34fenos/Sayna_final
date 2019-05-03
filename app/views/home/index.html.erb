@@ -59,15 +59,15 @@
                             <a class="nav-link" href="#" data-method="get">A PROPOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-method="get">BLOG</a>
+                            <a class="nav-link" href="<%= new_user_session_path %>">CONNEXION</a>
                         </li>
                         <li class="nav-item last">
                             <a class="nav-link" href="<%= contact_path %>"  data-method="get">CONTACTER</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="/" data-method="get" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONNECTION</a>
+                            <a class="nav-link active dropdown-toggle" href="/" data-method="get" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CONNEXION</a>
                             <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
-                                <a class="dropdown-item active" href="#" data-method="get">Etudiant</a>
+                                <a class="dropdown-item active" href="<%= user_session_path %>" data-method="get">Etudiant</a>
                                 <a class="dropdown-item" href="#" dta-method="get">Entreprise</a>
                             </div><!-- / dropdown-menu -->
                         </li><!-- / dropdown -->

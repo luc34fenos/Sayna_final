@@ -1,26 +1,65 @@
-<h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans|Ubuntu:400,500" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/login.css">
+<body>
+  <div class="wrapper">
+    <div class="background">
+      <div class="left">
+        <h2 class="back-header">Dont have an account yet?</h2>
+        <p class="back-p">Well doggonit you should sign up today!</p>
+        <button class="back-btn signup-but">SIGN UP</button>
+      </div>
+      <div class="right">
+        <h2 class="back-header">Do you already have an account?</h2>
+        <p class="back-p">Well doggonit let's get you logged in!</p>
+        <button class="back-btn login-but">LOGIN</button>
+      </div>
     </div>
-  <% end %>
+    <div class="form-container">
+      <div class="sign-up">
+        <h2 class="form-header">SIGN UP</h2>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email",id:"email" ,placeholder:"Email" %><i class="fa fa-envelope-o"></i>
+        <%= f.password_field :password, autocomplete: "new-password",id:"pass" ,placeholder:"Password" %><i class="fa fa-lock"></i>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password",id:"pass" ,placeholder:"confirmation-Password" %><i class="fa fa-lock"></i>
+        <%= f.submit "Sign up" , class: "form-btn"  %>
+        <% end %>
+      </div>
+      <div class="login hide">
+        <h2 class="form-header">LOGIN</h2>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+         <%= f.email_field :email, autofocus: true, autocomplete: "email", id:"email" ,placeholder:"Email"%><i class="fa fa-envelope-o"></i>
+         <%= f.password_field :password, autocomplete: "current-password" ,id:"pass", placeholder:"Password" %><i class="fa fa-lock"></i>
+
+         <%= f.submit "Log in" , class: "form-btn"  %>
+
+        <% end %>
+
+
+      </div>
+    </div>
   </div>
-<% end %>
+</body>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    var signUp = $('.signup-but');
+    var logIn = $('.login-but');
 
-<%= render "devise/shared/links" %>
+    signUp.on('click', function(){
+      $('.login').fadeOut('slow').css('display', 'none');
+      $('.sign-up').fadeIn('slow');
+
+      $('.form-container').animate({left: '10px'}, 'slow');
+    });
+
+    logIn.on('click', function(){
+      $('.login').fadeIn('slow');
+      $('.sign-up').fadeOut('slow').css('display', 'none');
+
+      $('.form-container').animate({left: '400px'}, 'slow');
+    });
+  });
+
+</script>
