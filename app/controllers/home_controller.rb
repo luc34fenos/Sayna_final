@@ -2,11 +2,11 @@ class HomeController < ApplicationController
     def send_mail
        user = params[:user]
             if UsersMailer.contacter(user).deliver_now
-              note "message envoyé"
+              flash[:notice] = "message envoyé"
               redirect_to root_path
             else
-              note "donné invalid, veuillez reéssayer"
-              render "contact"
+              flash[:notice] = "donné invalid, veuillez reéssayer"
+              redirect_to contact_path
             end
     end
 

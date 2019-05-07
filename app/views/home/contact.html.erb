@@ -49,7 +49,7 @@
                 <div class="spacer">&nbsp;</div>
                 <p class="text-center">Quisque et bibendum purus. In non neque nec nisi laoreet rutrum. Vivamus maximus massa sed tellus convallis porta.</p>
                 <div class="spacer">&nbsp;</div>
-                <form id="contactForm" data-toggle="validator" action="/sendmail" method="post" >
+                <form action="/sendmail" method="post" >
            	        <input type="hidden" name="authenticity_token" value="authenticity_token_key">
 					<div class="row">
                         <div class="col-md-6 sub-col-left">
@@ -75,8 +75,6 @@
 
                     <div class="text-center">
                         <button type="submit" id="form-submit" class="btn btn-submit btn-info rectangle">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div>
-                        <div class="clearfix"></div>
                     </div><!-- / text-center -->
                 </form><!-- / contactform -->
             </div><!-- / container -->
