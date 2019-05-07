@@ -170,9 +170,13 @@
                 </div><!-- / navbar-collapse -->
             </div><!-- / container -->
         </nav><!-- / navbar -->
-        <p> <%= notice %> </p>
-        <p> <%= alert %> </p>
+        <% if flash[:notice] %>
+            <div z-index=1 class="notice"> <%= flash[:notice] %> </div>
+        <% end %>
 
+        <% if flash[:alert] %>    
+            <div z-index=1 class="alert"> <%= flash[:alert] %> </div>
+        <% end %>
 
         <%= yield %>
 
