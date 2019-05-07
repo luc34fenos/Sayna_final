@@ -20,4 +20,14 @@ class HomeController < ApplicationController
 
     end
 
+    def equipe
+
+    end
+
+    def simplon
+
+    end
+    def thp
+
+    end
 end
