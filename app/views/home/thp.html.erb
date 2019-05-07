@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="has-boxed-container">
+
+<head>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio Bootstrap 4 Template">
+    <meta name="author" content="kingstudio.ro">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
+    <!-- Site Title -->
+    <title>Uniq - Portfolio Template</title>
+    <!-- Bootstrap 4 core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="has-boxed-container">
+
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="top"></div>
+
+    <div id="main-content" class="boxed-container">
+
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: url('images/bg-img-small.jpg');">
+          <div class="container">
+              <a class="navbar-brand" href="<%= root_path %>" data-method="get" ><img src="images/sayna_logo.jpg" style="border-radius: 50%" alt=""></a>
+
+              <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="icon-bar top-bar"></span>
+                  <span class="icon-bar middle-bar"></span>
+                  <span class="icon-bar bottom-bar"></span>
+                  <span class="sr-only">Sayna</span>
+              </button><!-- / navbar-toggler -->
+
+              <div class="collapse navbar-collapse" id="navbar-toggle">
+                  <ul class="navbar-nav ml-auto">
+                      <li class="nav-item after-dropdown">
+                          <a class="nav-link" href="<%= root_path %>" data-method="get">ACCEUIL</a>
+                      </li>
+
+                      <li class="nav-item dropdown">
+                            <a class="nav-link" href="/" data-method="get" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROGRAMME</a>
+                            <div class="dropdown-menu drop-to-right dropdown-inverse animated fadeIn fast" aria-labelledby="dropdown1">
+                                <a class="dropdown-item active" href="<%= simplon_path %>" data-method="get">SIMPLON</a>
+                                <a class="dropdown-item" href="<%= thp_path %>" dta-method="get">T.H.P</a>
+                            </div><!-- / dropdown-menu -->
+                      </li><!-- / dropdown -->
+                      <li class="nav-item after-dropdown">
+                          <a class="nav-link" href="<%= equipe_path %>" data-method="get">EQUIPE</a>
+                      </li>
+
+                      <li class="nav-item last">
+                          <a class="nav-link" href="<%= contact_path %>"  data-method="get">CONTACT</a>
+                      </li>
+
+                  </ul><!-- / navbar-nav -->
+              </div><!-- / navbar-collapse -->
+          </div><!-- / container -->
+      </nav><!-- / navbar -->
+
+
+        <header class="boxed-single-page parallax">
+            <div class="container">
+                <div class="header-content text-center">
+                    <h2 class="text-white">THP</h2>
+                    <p class="text-white mb-0">Donec rhoncus sodales lacus maet.</p>
+                </div><!-- / header-content -->
+            </div><!-- / container -->
+        </header>
+
+        <div class="spacer">&nbsp;</div>
+
+        <section id="posts">
+            <div class="spacer">&nbsp;</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 blog-content">
+                        <div class="blog block">
+                            <img src="images/blog-post.jpg" alt="">
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <p class="text-sm"><i class="far fa-user text-primary mr-1"></i> KING <i class="far fa-bookmark text-primary ml-3 mr-1"></i> CREATIVE <i class="far fa-clock text-primary ml-3 mr-1"></i> 18 AUG 2018</p>
+                                </div><!-- / post-meta -->
+                                <h4 class="post-title text-bold">MENU BOOK</h4>
+                                <p class="mb-3">Donec rhoncus sodales lacus maet pellentesque molestie. Maecenas sodales molestie ipsum. uspendisse porttitor lacus sapien, quis pellentesque ligula volutpat et. Phasellus aliquam nibh at varius vestibulum. Curabitur convallis dolor mauris, eget ultrices.</p>
+                                <p class="mb-3">Quisque molestie nisl vitae justo semper, non luctus purus pharetra. Nulla scelerisque nunc est, sed molestie velit lobortis vitae.</p>
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Suspendisse elit nunc, ornare eu dictum ut, consectetur eget turpis. Nam nec ex ac nunc mollis tincidunt. Sed ut luctus ante, vitae tempor velit. Maecenas eget dictum nisl. Proin imperdiet libero sem, ut consectetur felis aliquam sit amet.</p>
+                                    <footer class="blockquote-footer">Someone Famous</footer>
+                                </blockquote>
+                                <h4 class="mb-3">Quisque consequat</h4>
+                                <p>In lobortis massa tristique metus dictum hendrerit. Integer faucibus augue vitae arcu placerat, id eleifend odio semper. Etiam congue sed ex in cursus. Praesent at tempor turpis. In rhoncus congue euismod. Ut euismod ex eget bibendum porta.</p>
+                            </div><!-- / post-content -->
+                        </div><!-- / blog-block -->
+
+                        <div class="spacer">&nbsp;</div>
+
+                        <div id="comments" class="comments">
+                            <div class="container">
+                                <h4 class="mb-3">COMMENTS (3)</h4>
+
+                                <div class="spacer">&nbsp;</div>
+
+                                <ul class="media-list">
+                                    <li class="media">
+                                        <div class="media-left">
+                                            <a href="#x">
+                                                <img class="media-object" alt="" src="images/user-img1.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="comment-info">
+                                                <div class="comment-date text-sm"><i class="far fa-clock mr-1"></i> 20 AUG 2018</div>
+                                                <div class="comment-author"><a href="#x"><b>John Doe</b></a></div>
+                                            </div><!-- / comment-info -->
+                                            <div class="comment">
+                                                <p class="mb-0">Quisque molestie nisl vitae justo semper, non luctus purus pharetra. Nulla scelerisque nunc est, sed molestie velit lobortis vitae. In hac habitasse platea dictumst. Nullam faucibus tempor nisl, nec ultrices justo.</p>
+                                                <a href="#x" class="comment-reply"><i class="fas fa-reply"></i> <b>Reply</b></a>
+                                            </div><!-- / comment -->
+
+                                            <!-- nested media objects -->
+                                            <div class="media">
+                                                <div class="media-left">
+                                                    <a href="#x">
+                                                        <img class="media-object" alt="" src="images/user-img2.jpg">
+                                                    </a>
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="comment-info">
+                                                        <div class="comment-date text-sm"><i class="far fa-clock mr-1"></i> 21 AUG 2018</div>
+                                                        <div class="comment-author"><a href="#x"><b>Natalie Doe</b></a></div>
+                                                    </div><!-- / comment-info -->
+                                                    <div class="comment">
+                                                        <p class="mb-0">Sed dignissim venenatis risus, sit amet sollicitudin odio faucibus eu. Cras facilisis consectetur diam vel mattis. Fusce diam ipsum.</p>
+                                                        <a href="#x" class="comment-reply"><i class="fas fa-reply"></i> <b>Reply</b></a>
+                                                    </div><!-- / comment -->
+                                                </div><!-- / nested media objects media-body -->
+                                            </div><!-- / nested media objects media -->
+                                        </div><!-- / parent media-body -->
+                                    </li><!-- / media -->
+
+                                    <li class="media">
+                                        <div class="media-left">
+                                            <a href="#x">
+                                                <img class="media-object" alt="" src="images/user-img3.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="comment-info">
+                                                <div class="comment-date text-sm"><i class="far fa-clock mr-1"></i> 19 AUG 2018</div>
+                                                <div class="comment-author"><a href="#x"><b>Lucy Doe</b></a></div>
+                                            </div><!-- / comment-info -->
+                                            <div class="comment">
+                                                <p class="mb-0">Suspendisse elit nunc, ornare eu dictum ut, consectetur eget turpis. Nam nec ex ac nunc mollis tincidunt. Sed ut luctus ante, vitae tempor velit. Maecenas eget dictum nisl. Proin imperdiet libero sem.</p>
+                                                <a href="#x" class="comment-reply"><i class="fas fa-reply"></i> <b>Reply</b></a>
+                                            </div><!-- / comment -->
+                                        </div><!-- / parent media-body -->
+                                    </li><!-- / media -->
+                                </ul><!-- / media-list -->
+
+                                <div class="spacer-2x">&nbsp;</div>
+
+                                <!-- comment form -->
+                                <div id="comment-form">
+                                    <h4 class="mb-3">LEAVE A COMMENT</h4>
+                                    <form id="commentForm">
+                                        <div class="row">
+                                            <div class="col-md-6 sub-col-left">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control border-faded" id="subject" placeholder="*Name">
+                                                </div>
+                                            </div><!-- / sub-column -->
+                                            <div class="col-md-6 sub-col-right">
+                                                <div class="form-group">
+                                                    <input type="email" class="form-control border-faded" id="email" placeholder="*Email">
+                                                </div>
+                                            </div><!-- / sub-column -->
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea id="message" class="form-control border-faded" rows="5" placeholder="*Comment"></textarea>
+                                                </div>
+                                            </div><!-- / sub-column -->
+                                        </div><!-- / row -->
+
+                                        <div class="text-center">
+                                            <button type="submit" id="form-submit" class="btn btn-primary"><i class="fas fa-comments mr-1"></i> <span>Post Comment</span></button>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div><!-- / text-center -->
+                                    </form><!-- / commentForm -->
+                                </div>
+                                <!-- / comment form -->
+                            </div><!-- / container -->
+                        </div><!-- / comments -->
+                    </div><!-- / blog-content -->
+
+                    <div class="col-md-4 blog-sidebar mt-3">
+                        <div class="sidebar-widget">
+                            <div class="about-widget">
+                                <h4 class="widget-title text-center">ABOUT ME</h4>
+                                <div class="about-image text-center">
+                                    <img src="images/about.jpg" alt="">
+                                </div><!-- / about-image -->
+                                <p class="text-center">Fusce non tristique turpis. Nunc eget felis porta, dapibus urna non, interdum leo. Cras tristique orci quis</p>
+                            </div><!-- / about-widget -->
+                        </div><!-- / sidebar-widget -->
+
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title text-center">RECENT POSTS</h4>
+                            <div class="spacer">&nbsp;</div>
+                            <div class="post-widget">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <div class="recent-posts first">
+                                            <div class="recent-post-image">
+                                                <img src="images/blog-post.jpg" alt="">
+                                            </div><!-- / recent-post-image -->
+                                            <div class="recent-post-content">
+                                                <a href="single-post-boxed.html" class="recent-post-title">MENU BOOK</a>
+                                                <p class="text-sm mb-2">Creative</p>
+                                                <p class="text-sm opc-75"><i class="far fa-clock"></i> 18 AUG 2018</p>
+                                            </div><!-- / recent-post-content -->
+                                        </div><!-- / recent-posts -->
+                                    </li>
+                                    <li>
+                                        <div class="recent-posts pt-2">
+                                            <div class="recent-post-image">
+                                                <img src="images/blog-post2.jpg" alt="">
+                                            </div><!-- / recent-post-image -->
+                                            <div class="recent-post-content">
+                                                <a href="single-post-boxed.html" class="recent-post-title">AIRPORT LOUNGE</a>
+                                                <p class="text-sm mb-2">Travel</p>
+                                                <p class="text-sm opc-75"><i class="far fa-clock"></i> 17 AUG 2018</p>
+                                            </div><!-- / recent-post-content -->
+                                        </div><!-- / recent-posts -->
+                                    </li>
+                                </ul>
+                            </div><!-- / post-widget -->
+                        </div><!-- / sidebar-widget -->
+
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title text-center pb-3">NEWSLETTER</h4>
+                            <p class="text-center">Subscribe to our newsletter to get notified about new posts, informations and updates.</p>
+                            <div class="input-group mt-3">
+                                <input type="text" class="form-control border-faded" placeholder="Email Address">
+                                <span class="input-group-btn">
+                                    <a href="#x" class="btn btn-w-icon btn-primary ml-2"><span><i class="fas fa-paper-plane"></i></span></a>
+                                </span>
+                            </div><!-- / input-group -->
+                        </div><!-- / sidebar-widget -->
+
+                        <div class="sidebar-widget">
+                            <h4 class="widget-title text-center pb-2">TAGS</h4>
+                            <div class="tag-cloud">
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#design</a>
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#illustrations</a>
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#branding</a>
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#webdesign</a>
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#photography</a>
+                                <a href="#x" class="btn btn-sm btn-black rectangle mt-1">#travel</a>
+                            </div><!-- / tag-cloud -->
+                            <!-- / tags-widget -->
+                        </div><!-- / sidebar-widget -->
+                    </div><!-- / blog-sidebar -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </section><!-- / posts -->
+
+        <div class="spacer">&nbsp;</div>
+
+        <div id="share-post" class="text-center bg-white">
+            <a href="#x" class="btn-social btn-facebook m-1 rectangle"><i class="fab fa-facebook-f"></i> <span>Share - 932</span></a>
+            <a href="#x" class="btn-social btn-twitter m-1 rectangle"><i class="fab fa-twitter"></i> <span>Tweet - 3.5K</span></a>
+            <a href="#x" class="btn-social btn-google m-1 rectangle"><i class="fab fa-google-plus-g"></i> <span>Share - 475</span></a>
+            <a href="#x" class="btn-social btn-pinterest m-1 rectangle"><i class="fab fa-pinterest"></i> <span>Pin It - 2.7K</span></a>
+        </div><!-- share-post -->
+
+        <section class="pagination bg-primary">
+            <h3 class="hidden">PAGINATION</h3>
+            <div class="container">
+                <a href="single-post-boxed.html" class="btn btn-link btn-lg btn-direction text-white"><i class="fas fa-long-arrow-alt-left mr-2"></i> Prev</a>
+                <a href="single-post-boxed.html" class="btn btn-link btn-lg btn-direction pull-right text-white">Next <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+            </div><!-- / container -->
+        </section><!-- / pagination -->
+
+        <a href="#top" class="scroll-to-top dark-scroll is-hidden smooth-scroll" data-nav-status="toggle"><i class="md-icon dp24">expand_less</i></a>
+
+        <div class="footer-widgets bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 widget">
+                        <img src="images/logo.png" alt="logo" class="footer-logo">
+                        <p>Donec quis metus ex. Proin pellentesque velit euismod nisl volutpat, id viverra metus mollis. Fusce at suscipit arcu. Nunc tellus nibh, ullamcorper nulla gravida euismod quis metus.</p>
+                        <a href="about-boxed.html" class="btn-link mt-2"><b>View More</b></a>
+                    </div><!-- / column-->
+
+                    <div class="col-lg-3 widget">
+                        <h3 class="widget-title">USEFUL LINKS</h3>
+                        <ul class="footer-list">
+                            <li class="mb-3"><a href="#x">Privacy Policy</a></li>
+                            <li class="mb-3"><a href="#x">Terms &amp; Conditions</a></li>
+                            <li class="mb-3"><a href="#x">News &amp; Updates</a></li>
+                            <li class="mb-3"><a href="#x">Support Center</a></li>
+                        </ul>
+                    </div><!-- / column-->
+
+                    <div class="col-lg-3 widget">
+                        <h3 class="widget-title">RECENT PROJECTS</h3>
+                        <div class="project-widget">
+                            <ul class="list-unstyled footer-list">
+                                <li>
+                                    <div class="recent-posts first">
+                                        <div class="recent-post-image">
+                                            <img src="images/project1.jpg" alt="">
+                                        </div><!-- / recent-post-image -->
+                                        <div class="recent-post-content">
+                                            <a href="single-project-boxed.html" class="recent-post-title">PLASTIC POUCH</a>
+                                            <p class="text-sm mb-2">Illustrations</p>
+                                            <p class="text-sm opc-75"><i class="far fa-clock"></i> 23 AUG 2018</p>
+                                        </div><!-- / recent-post-content -->
+                                    </div><!-- / recent-posts -->
+                                </li>
+                                <li>
+                                    <div class="recent-posts pt-2">
+                                        <div class="recent-post-image">
+                                            <img src="images/project2.jpg" alt="">
+                                        </div><!-- / recent-post-image -->
+                                        <div class="recent-post-content">
+                                            <a href="single-project-boxed.html" class="recent-post-title">BIZ CARDS</a>
+                                            <p class="text-sm mb-2">Branding, Design</p>
+                                            <p class="text-sm opc-75"><i class="far fa-clock"></i> 21 AUG 2018</p>
+                                        </div><!-- / recent-post-content -->
+                                    </div><!-- / recent-posts -->
+                                </li>
+                            </ul>
+                        </div><!-- / project-widget -->
+                    </div><!-- / column-->
+
+                    <div class="col-lg-3 widget">
+                        <h3 class="widget-title">CONTACT US</h3>
+                        <ul class="footer-list">
+                            <li class="mb-3"><a href="tel:01234567890"><i class="fas fa-phone mr-2"></i> 0123 456 7890</a></li>
+                            <li class="mb-3"><a href="mailto:info@youriste.com"><i class="fas fa-envelope mr-2"></i> info@yoursite.com</a></li>
+                            <li class="mb-3"><a href="#x"><i class="fab fa-twitter mr-2"></i> @UniqTwitter</a></li>
+                            <li class="mb-3"><i class="fas fa-map-marked-alt mr-2"></i> 27 King Street, Miami</li>
+                        </ul>
+                    </div><!-- / column-->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </div><!-- / footer-widgets -->
+
+        <footer class="bg-white">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 footer-left-area">
+                        <p>© 2018 Uniq by <a href="https://kingstudio.ro" target="_blank">KingStudio</a></p>
+                    </div>
+                    <div class="col-lg-4 social-icons footer-right-area">
+                        <a href="#x" class="btn-social text-whit"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#x" class="btn-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#x" class="btn-social"><i class="fab fa-instagram"></i></a>
+                    </div><!-- / social-icons -->
+                </div><!-- / row -->
+            </div><!-- / container -->
+        </footer>
+    </div><!-- / main-content -->
+
+<!-- Core JavaScript -->
+<script src="js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- / Core JavaScript -->
+
+<!-- preloader -->
+<script src="js/preloader.js"></script>
+<!-- / preloader -->
+
+<!-- Smooth Scrolling -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<!-- / Smooth Scrolling -->
+
+<!-- Hide Nav -->
+<script src="js/hide-nav.js"></script>
+<!-- / Hide Nav -->
+
+</body>
+
+</html>
