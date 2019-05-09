@@ -3035,7 +3035,7 @@ label.btn-file {
 /* animated hamburger icon */
 .navbar-toggler.menu-text:before {
   content: 'MENU';
-  color: #aaaaaa;
+  color: #EEEEEE;
   float: left;
   margin-left: -60px;
   margin-top: 2px;
@@ -3120,7 +3120,7 @@ label.btn-file {
 }
 
 .navbar-toggler .icon-bar {
-  background-color: #aaaaaa;
+  background-color: #EEEEEE;
   transform: rotate(0deg) translate(0px, 0px);
   transition: ease all .2s;
 }
@@ -6007,6 +6007,10 @@ ul.portfolio.info-effect {
     display: block !important;
     text-align: center !important;
   }
+
+  #brain {
+    font-size: 
+  }
 }
 /*------- end of 767px -------*/
 /*------- 575px -------*/
@@ -6378,4 +6382,16 @@ ul.portfolio.info-effect {
   width: auto;
   height: 400px;
   overflow: hidden;
+}
+
+#brain {
+  cursor: pointer;
+  transition: transform .75s cubic-bezier(.12, .75, .71, 2.04);
+  font-size: 45px;
+  color: aliceblue;
+  text-transform: bold;
+}
+
+#brain:hover {
+  transform: scale(1.3);
 }
