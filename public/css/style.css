@@ -6375,6 +6375,7 @@ ul.portfolio.info-effect {
 
 
 .team img {
+  clear: both;
   width: auto;
   height: 400px;
   overflow: hidden;
