@@ -136,7 +136,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: url('images/bg-img-small.jpg');">
             <div class="container">
-                <a class="navbar-brand" href="<%= root_path %>" data-method="get" ><img src="images/saynaicon_4.png" style="border-radius: 50%" alt=""></a>
+                <a class="navbar-brand d-flex justify-content-center" href="<%= root_path %>" data-method="get" ><img src="images/saynaicon_4.png" style="border-radius: 50%" alt=""> <span style="color: white; font-size: 26px; ">&nbsp;𝐒𝐀𝐘𝐍𝐀</span></a>
 
                 <button class="navbar-toggler collapsed menu-text" type="button" data-toggle="collapse" data-target="#navbar-toggle" aria-controls="navbar-toggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar top-bar"></span>
@@ -148,7 +148,7 @@
                 <div class="collapse navbar-collapse" id="navbar-toggle">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item after-dropdown">
-                            <a class="nav-link" href="<%= root_path %>" data-method="get">ACCEUIL</a>
+                            <a class="nav-link" href="<%= root_path %>" data-method="get">ACCUEIL</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -180,13 +180,11 @@
 
         <%= yield %>
 
-
-        <div class="spacer">&nbsp;</div>
-
-        <a href="#top" class="scroll-to-top dark-scroll is-hidden smooth-scroll" data-nav-status="toggle"><i class="md-icon dp24">expand_less</i></a>
-
-
     </div><!-- / main-content -->
+
+    <div class="spacer">&nbsp;</div>
+
+    <a href="#top" class="scroll-to-top dark-scroll is-hidden smooth-scroll" data-nav-status="toggle"><i class="md-icon dp24">expand_less</i></a>
 
     <div id="reveal-footer" class="has-footer-widgets">
         <div class="reveal-content">
@@ -195,7 +193,8 @@
                     <div class="row d-flex justify-content-between">
                         <div class="col-lg-3 widget">
                             <img src="images/sayna_logo.png" style="border-radius: 50%" alt="logo" class="footer-logo">
-                            <p>Ascensseur digital des jeunes a madagascar</p>
+                            <p>Ascensseur digital des talents</p>
+                            <br>
                             <a href="#about" class="btn-link smooth-scroll mt-2"><b>A propos</b></a>
                         </div><!-- / column-->
 
