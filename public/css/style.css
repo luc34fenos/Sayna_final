@@ -2931,7 +2931,7 @@ label.btn-file {
 
 .fixed-top.nav-scroll {
   padding: 0.75rem 1.25rem;
-  opacity: 0.84;
+  opacity: 0.95;
   background-color: rgba(255, 255, 255, 1) !important;
 }
 
@@ -2963,7 +2963,7 @@ label.btn-file {
 
 .navbar-brand img {
   width: auto;
-  max-height: 40px;
+  max-height: 85px;
   margin-top: 0;
   -moz-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
@@ -2976,11 +2976,11 @@ label.btn-file {
 }
 
 .nav-scroll .navbar-brand img {
-  max-height: 35px;
+  max-height: 75px;
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:focus {
-  color: #0F1110;
+  color: #EEEEEE;
 }
 
 .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .open > .nav-link {
